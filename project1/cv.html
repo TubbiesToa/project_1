@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project1.CSS">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+   <style>
+    *{
+        
+        scroll-box {
+            width: 300px;
+            height: 150px;
+            overflow: auto;
+            border: 1px solid #FFD966; 
+            padding: 10px;
+        }
+    }
+   </style>
+</head>
+<body>
+    
+     <nav class="navigation" id="navigation-head">
+        <a href="/project1/index.html" class="active">Start</a>
+        <a href="/project1/hobby.html">Hobby's</a>
+        <a href="/project1/ervaring.html">Ervaring</a>
+        <a href="/project1/contact.html">Contact</a>
+        <a href="/project1/cv.html">Cv</a>
+        <a href="#" class="icon" onclick="toggleResponsiveClass()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+        <script>
+        function toggleResponsiveClass() {
+            console.log('Hello World')
+            let element = document.getElementById("navigation-head");
+            if (element.className === "navigation") {
+                element.className += " responsive";
+            } else {
+                element.className = "navigation";
+            }
+        }
+    </script>
+<div class = "scroll-box">
+        <img src="Images/Cv Toa Turlinckx.pdf.jpg" alt="cv" title="cv" class="mok">
+
+    </div>
+</body>
+</html>

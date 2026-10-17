@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartPagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="project1.CSS">
+    <style>
+        
+        *{
+      background-color: #4B2D08;
+
+}
+    </style>
+</head>
+<body>
+      <nav class="navigation" id="navigation-head">
+        <a href="/project1/index.html" class="active">Start</a>
+        <a href="/project1/hobby.html">Hobby's</a>
+        <a href="/project1/ervaring.html">Ervaring</a>
+        <a href="/project1/contact.html">Contact</a>
+        <a href="/project1/cv.html">Cv</a>
+        <a href="#" class="icon" onclick="toggleResponsiveClass()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+        <script>
+        function toggleResponsiveClass() {
+            console.log('Hello World')
+            let element = document.getElementById("navigation-head");
+            if (element.className === "navigation") {
+                element.className += " responsive";
+            } else {
+                element.className = "navigation";
+            }
+        }
+    </script>
+    <h1 class = "Hoofd">Ervaring</h1>
+     
+    <div class="grid-container">
+        <div>
+            <h2>Opleiding</h2> 
+            <p>Atheneum Go! Geel - 6ICW(Informatie Communicatiewetenschappen)</p>
+        </div>
+        <div>
+            <h2>Java Script</h2>
+            <p>Gemiddeld</p>
+        </div>
+        <div>
+            <h2>Python</h2>
+            <p>Gemiddeld</p>
+        </div>
+        <div>
+            <h2>Visual Basic</h2>
+            <p>Gemiddeld</p>
+        </div>
+        <div> 
+                <h2>Bakker</h2> 
+                <p>Ik heb al 5 maanden in een bakker gewerkt en heb lere werken met de apparaten en de brood soorte snel kunne herkennen. Ik ben dus heel flexibel en wil graag mijn best doen om bij te leren.
+        </div>
+        <div> 
+            <h2>Vlees fabriek</h2> 
+            <p> Ik heb in een vleesfabriek veel manueel werk moeten doen. Ik heb ook daar leren werken in teams binnen een productie omgeving.</p>
+       </div>
+</body >
+
+</html>
+        

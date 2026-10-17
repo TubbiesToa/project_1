@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>StartPagina</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="project1.CSS">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        
+        *{
+      background-color: #4B2D08;
+        }
+        .formulier{
+            background-color: #4B2D08;
+            color: #ffd9668b;
+            margin-left: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: #ffd9668b;
+            border-width: 5px;
+        }
+      
+        
+    </style>
+</head>
+<body>
+      <nav class="navigation" id="navigation-head">
+        <a href="/project1/index.html" class="active">Start</a>
+        <a href="/project1/hobby.html">Hobby's</a>
+        <a href="/project1/ervaring.html">Ervaring</a>
+        <a href="/project1/contact.html">Contact</a>
+        <a href="/project1/cv.html">Cv</a>
+        <a href="#" class="icon" onclick="toggleResponsiveClass()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+        <script>
+        function toggleResponsiveClass() {
+            console.log('Hello World')
+            let element = document.getElementById("navigation-head");
+            if (element.className === "navigation") {
+                element.className += " responsive";
+            } else {
+                element.className = "navigation";
+            }
+        }
+    </script>
+    <h1 class = "Hoofd">Contact</h1>
+     
+    <div class="grid-container">
+        <div>
+            <h2>Te bereiken</h2> 
+            <p>Email: tturlinckx@gmail.com</p>
+            <p></p>
+        </div>
+         <form action="https://tm-statweb.be/forms.php" method="post">
+        <div class="formulier">
+            <h2>Formulier:</h2>
+            <label for="emailadres">E-mailadres</label>
+            <input type="email" id="emailadres" name="mailpers" required>
+        <div>
+        
+        <div>
+            <label for="naam">Naam</label>
+            <input type="text" id="naam" name="naampers" required>
+        <div>
+            <div>
+                <label for="onderwerp">Onderwerp</label>
+                <input type="text" id = "onderwerp" name = "onderwerppers" required>
+            </div>
+        <div>
+
+            <label for="bericht">Bericht:</label>
+            <textarea name="Berichtpers" id="bericht" rows="5"></textarea>
+        <div>
+     <input type="submit" value="Verzenden">
+                <div>
+
+</body >
+
+</html>
+        
